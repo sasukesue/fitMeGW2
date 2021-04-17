@@ -1,0 +1,41 @@
+{
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "className",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "duration",
+      "fieldType": "Integer",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "level",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "instructorName",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipId": 4,
+      "relationshipName": "fitSch",
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedule",
+      "otherEntityRelationshipName": "schFit"
+    }
+  ],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "FitnessClass",
+  "changelogDate": "20210417094251"
+}
